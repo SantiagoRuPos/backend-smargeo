@@ -23,7 +23,7 @@ async registerImplante(dto: RegisterImplanteDto): Promise<{ implante: Implante; 
 
   const saved = await this.implanteRepo.save(implante);
 
-  const urlFrontend = `http://localhost:4200/implantes/${codigoQR}`;
+  const urlFrontend = `https://loum.com.co//implantes/${codigoQR}`;
   const qrBase64 = await QRCode.toDataURL(urlFrontend);
 
   console.log('🟢 UUID generado:', codigoQR);
