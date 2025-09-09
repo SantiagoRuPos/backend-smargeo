@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { ImplanteService } from './modules/implante/implante.service';
 import { ImplantesModule } from './modules/implante/implante.module';
+import { TagModule } from './modules/tag/tag.module';
 
 @Module({
   providers: [AppService, ImplanteService],
@@ -18,6 +19,7 @@ import { ImplantesModule } from './modules/implante/implante.module';
     }),
     DatabaseCreatorModule,
     ImplantesModule,
+    TagModule,
     // DatabaseModule lo importarás desde main.ts
   ],
 })
